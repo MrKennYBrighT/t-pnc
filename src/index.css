@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .header-title          { @apply text-lg font-semibold tracking-tight; }
+  .account-header        { @apply text-sm font-medium text-gray-500 uppercase tracking-wider; }
+  .account-balance-label { @apply text-xs text-gray-600; }
+  .account-balance-amount{ @apply text-2xl font-bold text-gray-900; }
+
+  .fund-button {
+    @apply bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium uppercase tracking-wider hover:bg-blue-800 transition-colors;
+  }
+
+  .divider-gradient {
+    @apply h-px mt-3;
+    background: linear-gradient(to right, #fb923c, #ef4444, #fb923c);
+  }
+
+  .todo-pill {
+    @apply flex items-center gap-2 text-sm rounded-full px-3 py-1 text-white;
+    background-color: rgba(30, 58, 138, 0.5);
+  }
+
+  .todo-badge {
+    @apply flex items-center justify-center w-6 h-6 bg-white text-blue-700 rounded-full text-xs font-bold;
+  }
+
+  .menu-item {
+    @apply w-full flex items-center justify-between py-4 border-b border-gray-200 last:border-b-0;
+  }
+
+  .menu-icon-container {
+    @apply p-2 bg-gray-100 rounded-lg;
+  }
+
+  .menu-icon-zelle {
+    @apply p-2 bg-purple-100 rounded-lg;
+  }
+
+  .menu-title   { @apply font-medium text-gray-900; }
+  .menu-subtitle{ @apply text-xs text-gray-500 mt-0.5; }
+
+  .chevron-right {
+    @apply h-5 w-5 text-gray-400;
+    transform: rotate(-90deg);
+  }
+}
