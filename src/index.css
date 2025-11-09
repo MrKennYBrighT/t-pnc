@@ -16,10 +16,12 @@
     @apply bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium uppercase tracking-wider hover:bg-blue-800 transition-colors;
   }
 
-  .divider-gradient {
-    @apply h-px mt-3;
-    background: linear-gradient(to right, #fb923c, #ef4444, #fb923c);
-  }
+.divider-gradient {
+  @apply h-2 mt-3; /* h-2 = 0.5rem (8px), try h-4 or h-6 for thicker lines */
+  background: linear-gradient(to right, #fb923c, #ef4444, #fb923c);
+  border-radius: 4px; /* Optional: smooth rounded edges */
+}
+
 
   .todo-pill {
     @apply flex items-center gap-2 text-sm rounded-full px-3 py-1 text-white;
