@@ -43,7 +43,7 @@ function App() {
         <div className="mt-2 flex justify-between items-center gap-4">
   <div className="text-left">
     <p className="account-balance-label">Available Balance</p>
-    <p className="account-balance-amount">$49,257.13</p>
+    <p className="account-balance-amount">$107.99</p>
   </div>
   <button className="fund-button">FUND</button>
 </div>
